@@ -10,12 +10,14 @@
 <body>
     <header>
         <nav class="navbar-head">
-            <div class="navbar-head__Logo"><img src="Logo-pic" alt="Mars One Logo"> LOGO</div>
-            <ul class="navbar-head__link-list">
-                <li class="navbar-head__link-list__link"><a  href="index.html">Mars One</a></li>
-                <li class="navbar-head__link-list__link"><a href="faq.html">FAQ</a></li>
-                <li class="navbar-head__link-list__link"><a class="navbar-head__link-list__link--active" href="contact.html">Join the Crew</a></li>
+            <div class="navbar-head__Logo"><img src="Logo-pic" alt="Mars One Logo"></div>
+            <div>
+            <ul class="navbar-head__list">
+                <li class="navbar-head__list__item"><a class="navbar-head__list__link" href="index.html">Mars One</a></li>
+                <li class="navbar-head__list__item"><a class="navbar-head__list__link" href="faq.html">FAQ</a></li>
+                <li class="navbar-head__list__item"><a class="navbar-head__list__link navbar-head__list__link--active" href="contact.html">Join the Crew</a></li>
             </ul>
+        </div>
         </nav>
         <section class="Banner">
             <div class="Banner-contact__text-wrapper">
@@ -30,34 +32,81 @@
             <p>Be part of the mission. Send us your motivation of why just you should be the next space traveler</p>
         </div>
         <form action="">
+            <div>
             <label for="name"> 
-                Name
+                First name
                  <br/>
                 <input 
                 type="text"
                 name="first name"
-                id="name"
-                placeholder="type your name"
+                id="firstname"
                 required>
              </label> 
-             <br/><br/>
-            <label for="email">
-                Email
-                <br/>
-            <input
-                type="email"
-                name="emailaddress"
-                id="email"
-                placeholder=" email"
+            </div>
+             <br>
+             <div>
+             <label for="name"> 
+                Last name
+                 <br/>
+                <input 
+                type="text"
+                name="last name"
+                id="lastname"
                 required>
-            </label>
-            <br/><br/>
+             </label>
+            </div>
+             <br>
+             <div>
+             <label for="birthdate"> 
+                Date of Birth
+                 <br/>
+                <input 
+                type="text"
+                name="birthdate"
+                id="birthdate"
+                required>
+             </label>
+            </div>
+             <br>
+             <div>
+             <label for="profession"> 
+                Professional
+                 <br/>
+                <input 
+                type="text"
+                name="profession"
+                id="profession"
+                required>
+             </label>
+            </div>
+             <br>
+             <div>
+             <label for="primeskill"> 
+                Prime skill
+                 <br/>
+                <input 
+                type="text"
+                name="prime skill"
+                id="primeskill"
+                required>
+             </label>
+            </div>
+             <br>
+            <div>
             <label for="message">
                  Your message
                  <br/>
                  <textarea name="Text Message" id="message" cols="40" rows="5"></textarea>
             </label> 
+            </div>
+            <div><button type="submit">Submit</button></div>
         </form>
     </main>
+    <footer>
+            <div class="footer">
+                <h4 class="footer__heading">Mars One</h4>
+                <p class="footer__text">This site is made for educational purpose and is based on the real <span>Mars One</span> project.</p>
+            </div>
+        </footer>
 </body>
 </html>

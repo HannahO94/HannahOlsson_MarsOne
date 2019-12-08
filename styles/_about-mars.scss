@@ -1,0 +1,57 @@
+.about-mars{    
+    background-color: $background-color-two;
+    display: grid;
+    grid-gap: 2em;
+    // grid-column: 3fr 1fr;
+    // grid-row: 200px 200px;
+    justify-items: center;
+    padding-bottom: 5em;
+    padding-top: 2.5em;
+    
+    
+    &__article {
+        width: 80%;
+        display: grid;
+        grid-template-areas: 
+        "picture"
+        "text"
+        "text";
+        grid-row: reperat(3, 200px);
+        grid-column: auto;
+        grid-auto-flow: row;
+        justify-items: center;
+        padding: 1em;
+    }
+    &__heading {
+        width: 100%;
+        text-align: center;
+        font-weight: 800;
+    }
+    &__picture-wrapper {
+        grid-area: picture;
+        position: relative;
+        // width: 100%;
+        height: 100%;
+        &__item {
+            width: 150px;
+            height: 150px;
+
+        }
+    }
+    &__article-wrapper {
+        grid-area: text;
+        width: 100%;
+    }
+    
+}
+.about-mars__article {
+    background: $textandbackground-color-one;
+}
+.read-more {
+    border-radius: 10px;
+    border: solid 1px $background-footer;
+    width: 128px;
+    height: 38px;
+    color: $background-footer;
+    background: $textandbackground-color-one;
+}
