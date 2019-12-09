@@ -1,0 +1,41 @@
+.banner-faq {
+    box-sizing: border-box;
+    background-image: url(../pics/hero-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    &__text-wrapper{
+        padding: 5%;
+        &__heading {
+            margin-top: 0;
+            font-size: 3em;
+            font-weight: 800;
+            letter-spacing: 2.22px;
+            color: $textandbackground-color-one;
+        }
+        &__text {
+            color: #436dac;
+            font-size: 2em;
+            font-weight: bold;
+            letter-spacing: 1.48px;
+        }
+    }
+    &__line {
+        border: 3px solid $textandbackground-color-one;
+    }
+    &__overlay {
+        width: 100%;
+        height: 65%;
+        background: linear-gradient( 182deg, #00132c 61%, rgba(21, 52, 98, 0.9) -13%);
+        opacity: 0.7;   
+        position: absolute;
+        align-self: flex-start;
+        // transform: rotate(12deg);
+
+    }
+}

@@ -1,22 +1,48 @@
 
 .navbar-head {
-    height: 80px;
+    height: auto;
     background-color: #061b38;
-    width: 100%;
+    // width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin-top: 0;
     &__list {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
         display: contents;
         list-style: none;
         &__item {
             display: contents;
-            padding: 2em;
         }
         &__link {
+            padding: 0.2em;
             text-decoration: none;
-            padding: 2em;
+            color: $textandbackground-color-one;
+            font-weight: bold;
+            letter-spacing: 0.59px;
+            @media (min-width: 500px){
+                padding: 1em;
+            }
+        }
+    }
+    @media (min-width: 500px){
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    &__logo-wrapper{
+        box-sizing: border-box;
+        margin: 1em 2em;
+        height: 100%;
+
+    &__item {
+        height: 100%;
+        width: 90px;
+        object-fit: contain;
+        
+        
         }
     }
 }

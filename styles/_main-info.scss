@@ -2,27 +2,65 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+    align-items: center;
+    // padding-top: 5%;
     
     @media (min-width: 800px) {
         flex-direction: row-reverse;
+        justify-content: start;
+        flex-wrap: nowrap;
     }
 }
 .mars-one__info {
     width: 80%;
     @media (min-width: 800px){
-        width:50%;
+        width: 42%;
+        padding: 1em;
     }
+    @media (min-width: 1000px){
+        width: 42%;
+        padding: 5em;
+    }
+    &__heading {
+        font-weight: 800;
+        font-size: 31px;
+        color: $text-color-two;
+        letter-spacing: 1.33px;
+        @media (min-width: 800px){
+            font-size: 36px;
+            padding-left: 1em;
+        }
+    }
+    &__text {
+        font-size: 16px;
+        
+        letter-spacing: 0.67px;
+        line-height: 1.44;
+        &--bolder {
+            color: $text-color-two;
+        }
+        @media (min-width: 800px){
+            padding-left: 2.4em;
+        }
+    }
+    
 }
 .mars-one__picture-wrapper {
     box-sizing: border-box;
     width: 90%;
+    align-self: stretch;
     &__item {
         object-fit: cover;
         width: 100%;
         height: 100%;
+
     }
     @media (min-width: 800px){
         width:50%;
+        
+    }
+    @media (min-width: 1000px){
+        width:45%;
+        
     }
 }
