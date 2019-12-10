@@ -5,8 +5,8 @@
     padding-top: 5em;
     padding-bottom: 5em;
     color: $textandbackground-color-one;
-    font-family: 'Poppins', sans-serif;
-    
+    font-family: "Poppins", sans-serif;
+
     &__heading {
         font-weight: bold;
         margin-top: 0;
@@ -17,6 +17,7 @@
         margin-bottom: 0;
     }
     &__strong {
-        color: lighten($text-color-two, 20%)
+        color: lighten($text-color-two, 20%);
+        font-weight: bold;
     }
 }

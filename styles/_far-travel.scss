@@ -1,0 +1,36 @@
+.far-travel-article {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    @media (min-width: 1000px) {
+        flex-wrap: nowrap;
+    }
+    &__picture-wrapper {
+        width: 462px;
+        height: 462px;
+        background-image: radial-gradient(
+            circle at 50% 39%,
+            #072142,
+            #00132c 101%
+        );
+        @media (min-width: 1000px) {
+            margin-right: 10%;
+        }
+    }
+    &__wrapper {
+        align-self: center;
+        @media (min-width: 1000px) {
+            width: 70%;
+        }
+    }
+    &__text {
+        @extend %textprops;
+        @media (min-width: 1000px) {
+            padding-right: 10%;
+        }
+    }
+    &__heading {
+        @extend %headingprops;
+    }
+}
