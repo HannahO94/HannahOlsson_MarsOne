@@ -11,7 +11,7 @@
 
 .mars-one__info__text, .about-mars__article-wrapper, .facts-article__live-on-mars__text, .facts-article__risks__text, .facts-article__risks__list, .facts-article__todo__text, .far-travel-article__text {
   font-weight: 500;
-  line-height: 1.38;
+  line-height: 1.4;
   letter-spacing: 0.59px;
   color: #323232;
 }
@@ -20,7 +20,7 @@
   font-size: 24px;
   font-weight: 500;
   color: #e32700;
-  letter-spacing: 0.89px;
+  letter-spacing: 1px;
 }
 
 label {
@@ -316,7 +316,6 @@ body {
   width: 100%;
   text-align: center;
   font-weight: 800;
-  letter-spacing: 1.33px;
   font-size: 36px;
   color: #2c4f80;
 }
@@ -753,60 +752,96 @@ body {
   width: 30;
 }
 
+.join-in {
+  background: #f1f1f1;
+  padding: 5% 10% 5% 10%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media (min-width: 1000px) {
+  .join-in {
+    grid-auto-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .join-in__heading-wrapper {
+    grid-column: span 2;
+  }
+}
+
 .input {
   display: -ms-grid;
   display: grid;
-  width: 80%;
-  grid-gap: 2em;
-      grid-template-areas: "fistname lastname birthdate" "profession primeskill empty" "motivation motivation motivation";
-  -ms-grid-columns: 2fr 2fr 1fr;
-      grid-template-columns: 2fr 2fr 1fr;
+  background: #ffffff;
+  padding: 10%;
+  grid-gap: 1em;
+  grid-column: span 2;
+  grid-auto-flow: row;
 }
 
-.input__box__fistname {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: fistname;
+@media (min-width: 450px) {
+  .input {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 
-.input__box__lastname {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: lastname;
-}
-
-.input__box__birthdate {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: birthdate;
-}
-
-.input__box__profession {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: profession;
-}
-
-.input__box__primeskill {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: primeskill;
-}
-
-.input__motivation {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: motivation;
-}
-
-.input__motivation__message {
-  width: 100%;
+@media (min-width: 1000px) {
+  .input {
+    -ms-grid-columns: 2fr 2fr 1fr;
+        grid-template-columns: 2fr 2fr 1fr;
+    grid-gap: 2em;
+  }
 }
 
 .input__box {
   width: 100%;
+  height: 30px;
   border-radius: 5px;
+  border: solid 1px #2c4f80;
+}
+
+.input__submit__button {
+  color: #2c4f80;
+  width: 128px;
+  height: 38px;
+  border-radius: 10px;
+  border: solid 1px #2c4f80;
+}
+
+.input__box__birthdate {
+  width: 100%;
+}
+
+@media (min-width: 450px) {
+  .input__box__birthdate {
+    grid-column: span 2;
+    width: 40%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .input__box__birthdate {
+    width: 100%;
+    -ms-grid-column: 3;
+    grid-column: 3;
+  }
+}
+
+.input__motivation {
+  grid-column: 1 / -1;
+}
+
+.input__motivation__message {
+  width: 100%;
+  height: 200px;
   border: solid 1px #2c4f80;
 }
 /*# sourceMappingURL=style.css.map */

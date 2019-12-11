@@ -1,0 +1,69 @@
+.join-in {
+    background: $background-color-two;
+    padding: 5% 10% 5% 10%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    @media (min-width: 1000px) {
+        grid-auto-columns: 1fr 1fr 1fr;
+    }
+
+    &__heading-wrapper {
+        @media (min-width: 1000px) {
+            grid-column: span 2;
+        }
+    }
+}
+.input {
+    display: grid;
+    background: $textandbackground-color-one;
+    padding: 10%;
+    grid-gap: 1em;
+    grid-column: span 2;
+    grid-auto-flow: row;
+    @media (min-width: 450px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: 1000px) {
+        grid-template-columns: 2fr 2fr 1fr;
+        grid-gap: 2em;
+    }
+    &__box {
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+        border: solid 1px #2c4f80;
+    }
+    &__submit__button {
+        color: #2c4f80;
+        width: 128px;
+        height: 38px;
+        border-radius: 10px;
+        border: solid 1px #2c4f80;
+    }
+    &__box__birthdate {
+        width: 100%;
+        @media (min-width: 450px) {
+            grid-column: span 2;
+            width: 40%;
+        }
+        @media (min-width: 1000px) {
+            width: 100%;
+            grid-column: 3;
+        }
+    }
+    &__motivation {
+        grid-column: 1 / -1;
+        @media (min-width: 450px) {
+        }
+        &__message {
+            width: 100%;
+            height: 200px;
+            border: solid 1px #2c4f80;
+        }
+    }
+}
+
+label {
+    @extend %joinlabels;
+}
