@@ -1,0 +1,31 @@
+.banner-contact {
+    box-sizing: border-box;
+    background-image: url(../pics/hero-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+    &__text-wrapper {
+        padding: 5%;
+        &__heading {
+            margin-top: 0;
+            font-size: 3em;
+            font-weight: 800;
+            letter-spacing: 2.22px;
+            color: $textandbackground-color-one;
+        }
+        &__text {
+            color: #436dac;
+            font-size: 2em;
+            font-weight: bold;
+            letter-spacing: 1.48px;
+        }
+    }
+    &__line {
+        border: 3px solid $textandbackground-color-one;
+    }
+}

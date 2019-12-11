@@ -85,7 +85,7 @@
         grid-column: 2;
         display: flex;
         flex-direction: row;
-        min-height: 500px;
+        min-height: 400px;
     }
     &__wrapper {
         @media (min-width: 1000px) {
@@ -95,8 +95,12 @@
         }
     }
     &__heading {
-        padding-right: 3vw;
+        line-height: unset;
         @extend %headingprops;
+
+        @media (min-width: 1000px) {
+            padding-right: 3vw;
+        }
     }
     &__text {
         padding-right: 5vw;

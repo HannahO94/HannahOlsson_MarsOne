@@ -20,8 +20,14 @@
   font-size: 24px;
   font-weight: 500;
   color: #e32700;
-  line-height: 0.92;
   letter-spacing: 0.89px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.52px;
+  color: #2c4f80;
 }
 
 .banner {
@@ -596,7 +602,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    min-height: 500px;
+    min-height: 400px;
   }
 }
 
@@ -611,7 +617,13 @@ body {
 }
 
 .facts-article__todo__heading {
-  padding-right: 3vw;
+  line-height: unset;
+}
+
+@media (min-width: 1000px) {
+  .facts-article__todo__heading {
+    padding-right: 3vw;
+  }
 }
 
 .facts-article__todo__text {
@@ -668,5 +680,133 @@ body {
   .far-travel-article__text {
     padding-right: 10%;
   }
+}
+
+.banner-contact {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url(../pics/hero-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+
+.banner-contact__text-wrapper {
+  padding: 5%;
+}
+
+.banner-contact__text-wrapper__heading {
+  margin-top: 0;
+  font-size: 3em;
+  font-weight: 800;
+  letter-spacing: 2.22px;
+  color: #ffffff;
+}
+
+.banner-contact__text-wrapper__text {
+  color: #436dac;
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 1.48px;
+}
+
+.banner-contact__line {
+  border: 3px solid #ffffff;
+}
+
+.join-in__heading-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.join-in__heading-wrapper__head {
+  font-weight: 800;
+  font-size: 31px;
+  color: #e32700;
+  letter-spacing: 1.33px;
+}
+
+@media (min-width: 800px) {
+  .join-in__heading-wrapper__head {
+    font-size: 36px;
+    padding-left: 1em;
+  }
+}
+
+.join-in__heading-wrapper__text {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.89px;
+  text-align: center;
+  color: #2c4f80;
+  width: 30;
+}
+
+.input {
+  display: -ms-grid;
+  display: grid;
+  width: 80%;
+  grid-gap: 2em;
+      grid-template-areas: "fistname lastname birthdate" "profession primeskill empty" "motivation motivation motivation";
+  -ms-grid-columns: 2fr 2fr 1fr;
+      grid-template-columns: 2fr 2fr 1fr;
+}
+
+.input__box__fistname {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: fistname;
+}
+
+.input__box__lastname {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: lastname;
+}
+
+.input__box__birthdate {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: birthdate;
+}
+
+.input__box__profession {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: profession;
+}
+
+.input__box__primeskill {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: primeskill;
+}
+
+.input__motivation {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: motivation;
+}
+
+.input__motivation__message {
+  width: 100%;
+}
+
+.input__box {
+  width: 100%;
+  border-radius: 5px;
+  border: solid 1px #2c4f80;
 }
 /*# sourceMappingURL=style.css.map */
