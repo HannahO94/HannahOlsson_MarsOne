@@ -7,10 +7,15 @@
     justify-content: center;
     align-items: center;
     margin-top: 0;
-    &__list {
-        display: flex;
+    &__list-container {
         width: 100%;
+        display: flex;
         justify-content: space-around;
+        @media (min-width: 500px) {
+            justify-content: flex-end;
+        }
+    }
+    &__list {
         display: contents;
         list-style: none;
         &__item {

@@ -5,12 +5,12 @@
     width: 100%;
     max-width: 100%;
     max-height: 100%;
-    position: absolute;
+    // position: absolute;
 }
 %textprops {
     font-weight: 500;
     line-height: 1.4;
-    letter-spacing: 0.59px;
+    letter-spacing: 1px;
     color: $text-color-three;
 }
 %headingprops {
@@ -22,6 +22,6 @@
 %joinlabels {
     font-size: 14px;
     font-weight: bold;
-    letter-spacing: 0.52px;
+    letter-spacing: 1px;
     color: #2c4f80;
 }
