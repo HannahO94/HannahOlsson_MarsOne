@@ -441,10 +441,12 @@ body {
   margin-top: 0;
   font-size: 30px;
   letter-spacing: 1.11px;
+  margin-bottom: 0;
 }
 
 .footer__text {
   margin-bottom: 0;
+  padding: 1em;
 }
 
 .footer__strong {
@@ -606,8 +608,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 400px;
-  padding: 1em;
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
 }
 
 @media (min-width: 1000px) {
