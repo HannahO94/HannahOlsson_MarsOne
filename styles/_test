@@ -1,0 +1,14 @@
+.clip {
+    background: blue;
+    border: lightblue;
+    clip-path: circle(50% at 50% 0%);
+}
+
+
+bilder till index 
+src="pics/planet-red.png"
+src="pics/base.jpg"
+src="pics/solar.png"
+
+austronaut 
+src="pics/pictureofautsronaut.jpg"

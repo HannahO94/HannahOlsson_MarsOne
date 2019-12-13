@@ -10,6 +10,9 @@
     align-items: center;
     position: relative;
     &__text-wrapper {
+        @media (min-width: 800px){
+            width:30%;
+        }
         padding: 5%;
         &__heading {
             margin-top: 0;
@@ -17,6 +20,7 @@
             font-weight: 800;
             letter-spacing: 2.22px;
             color: $textandbackground-color-one;
+            border-bottom: 5px solid $textandbackground-color-one;
         }
         &__text {
             color: #436dac;
@@ -24,9 +28,6 @@
             font-weight: bold;
             letter-spacing: 1.48px;
         }
-    }
-    &__line {
-        border: 3px solid $textandbackground-color-one;
     }
     &__overlay {
         background: blue;

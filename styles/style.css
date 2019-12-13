@@ -1,4 +1,4 @@
-.facts-article__todo__img-item {
+.about-mars__picture-wrapper__item-two, .facts-article__todo__img-item {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
@@ -53,12 +53,19 @@ label {
   padding: 5%;
 }
 
+@media (min-width: 800px) {
+  .banner__text-wrapper {
+    width: 30%;
+  }
+}
+
 .banner__text-wrapper__heading {
   margin-top: 0;
   font-size: 3em;
   font-weight: 800;
   letter-spacing: 2.22px;
   color: #ffffff;
+  border-bottom: 5px solid #ffffff;
 }
 
 .banner__text-wrapper__text {
@@ -66,10 +73,6 @@ label {
   font-size: 2em;
   font-weight: bold;
   letter-spacing: 1.48px;
-}
-
-.banner__line {
-  border: 3px solid #ffffff;
 }
 
 .banner__overlay {
@@ -273,6 +276,7 @@ body {
 }
 
 .about-mars {
+  max-width: 1500px;
   background-color: #f1f1f1;
   display: -ms-grid;
   display: grid;
@@ -322,6 +326,26 @@ body {
   grid-gap: 1.5em;
 }
 
+.about-mars__article-two {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "picture" "text" "text";
+  grid-row: reperat(3, 200px);
+  grid-column: auto;
+  grid-auto-flow: row;
+  justify-items: center;
+  padding: 0;
+  grid-gap: 1.5em;
+}
+
+@media (min-width: 650px) {
+  .about-mars__article-two {
+        grid-template-areas: "picture space text";
+    grid-column: 200px 50px 1fr;
+    grid-row: auto;
+  }
+}
+
 @media (min-width: 650px) {
   .about-mars__article {
         grid-template-areas: "picture space text";
@@ -358,6 +382,20 @@ body {
   height: 200px;
 }
 
+.about-mars__picture-wrapper-two {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: picture;
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .about-mars__article-wrapper {
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
@@ -367,6 +405,10 @@ body {
 }
 
 .about-mars__article {
+  background: #ffffff;
+}
+
+.about-mars__article-two {
   background: #ffffff;
 }
 
@@ -391,12 +433,12 @@ body {
   }
 }
 
-.about-mars__article:nth-of-type(2) {
+.about-mars__article-two {
   grid-column: 1 / -1;
 }
 
 @media (min-width: 1000px) {
-  .about-mars__article:nth-of-type(2) {
+  .about-mars__article-two {
     -ms-grid-row: 3;
     grid-row: 3;
     -ms-grid-column: 1;
@@ -478,12 +520,19 @@ body {
   padding: 5%;
 }
 
+@media (min-width: 800px) {
+  .banner-faq__text-wrapper {
+    width: 30%;
+  }
+}
+
 .banner-faq__text-wrapper__heading {
   margin-top: 0;
   font-size: 3em;
   font-weight: 800;
   letter-spacing: 2.22px;
   color: #ffffff;
+  border-bottom: 5px solid #ffffff;
 }
 
 .banner-faq__text-wrapper__text {
@@ -528,16 +577,23 @@ body {
 
 @media (min-width: 650px) {
   .facts {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 @media (min-width: 1000px) {
   .facts {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-row: auto auto auto;
+  }
+}
+
+@media (min-width: 1300px) {
+  .facts {
     -ms-grid-columns: 1fr 2fr;
         grid-template-columns: 1fr 2fr;
-    grid-row: auto auto auto;
   }
 }
 
@@ -555,7 +611,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  min-height: 50%;
+  min-height: 250px;
 }
 
 @media (min-width: 1000px) {
@@ -624,7 +680,7 @@ body {
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1300px) {
   .facts-article__todo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -760,12 +816,19 @@ body {
   padding: 5%;
 }
 
+@media (min-width: 800px) {
+  .banner-contact__text-wrapper {
+    width: 30%;
+  }
+}
+
 .banner-contact__text-wrapper__heading {
   margin-top: 0;
   font-size: 3em;
   font-weight: 800;
   letter-spacing: 2.22px;
   color: #ffffff;
+  border-bottom: 5px solid #ffffff;
 }
 
 .banner-contact__text-wrapper__text {

@@ -11,12 +11,16 @@
     position: relative;
     &__text-wrapper {
         padding: 5%;
+        @media (min-width: 800px){
+            width:30%;
+        }
         &__heading {
             margin-top: 0;
             font-size: 3em;
             font-weight: 800;
             letter-spacing: 2.22px;
             color: $textandbackground-color-one;
+            border-bottom: 5px solid $textandbackground-color-one;
         }
         &__text {
             color: #436dac;
