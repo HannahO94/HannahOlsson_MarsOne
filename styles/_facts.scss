@@ -21,6 +21,9 @@
     @media (min-width: 1300px) {
         grid-template-columns: 1fr 2fr;
     }
+    @media (min-width: 1900px) {
+        grid-gap: 5em;
+    }
 
     &__heading {
         width: 100%;
@@ -39,8 +42,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    min-height: 250px
-    // display: flex;
+    min-height: 250px;
 }
 .facts-article__todo__img-item {
     @extend %picturepoperties;
@@ -53,32 +55,39 @@
     background: $textandbackground-color-one;
     grid-column: 1 / -1;
     padding: 1em;
+    @extend %boxshadow;
     @media (min-width: 1000px) {
         grid-column: 1 / 2;
         grid-row: 2 / 4;
-        padding: 2em;
+        padding: 3em;
     }
     &__heading {
         @extend %headingprops;
+        width: 100%;
     }
     &__text {
         @extend %textprops;
+        @media (min-width: 1000px) {
+            max-width: 525px;
+        }
     }
 }
 .facts-article__risks {
     background: $textandbackground-color-one;
     grid-column: 1 / -1;
     padding: 1em;
+    @extend %boxshadow;
     @media (min-width: 1000px) {
         grid-row: 2;
         grid-column: 2;
-        padding: 2em;
+        padding: 4em;
     }
     &__heading {
         @extend %headingprops;
     }
     &__text {
         @extend %textprops;
+        padding-right: 10%;
     }
     &__list {
         @extend %textprops;
@@ -90,6 +99,7 @@
     display: flex;
     flex-direction: column;
     min-height: min-content;
+    @extend %boxshadow;
     @media (min-width: 1000px) {
         grid-row: 3;
         grid-column: 2;
@@ -102,7 +112,7 @@
     }
     &__wrapper {
         @media (min-width: 1000px) {
-            padding: 2em;
+            padding: 4em;
             padding-right: 0;
             align-self: center;
         }

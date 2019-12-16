@@ -3,12 +3,14 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    // padding-top: 5%;
+    background: $textandbackground-color-one;
+    padding-top: 5%;
 
     @media (min-width: 800px) {
         flex-direction: row-reverse;
         justify-content: start;
         flex-wrap: nowrap;
+        padding-top: 0;
     }
 }
 .mars-one__info {

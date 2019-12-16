@@ -1,6 +1,11 @@
 .banner-contact {
     box-sizing: border-box;
-    background-image: url(../pics/hero-3.jpg);
+    background-image: linear-gradient(
+            to top,
+            rgba(193, 85, 85, 0.5),
+            rgba(36, 2, 2, 0.5)
+        ),
+        url(../pics/hero-3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -11,8 +16,8 @@
     position: relative;
     &__text-wrapper {
         padding: 5%;
-        @media (min-width: 800px){
-            width:30%;
+        @media (min-width: 800px) {
+            width: 30%;
         }
         &__heading {
             margin-top: 0;

@@ -1,38 +1,43 @@
 .far-travel-article {
+    background: $textandbackground-color-one;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     flex-wrap: wrap;
 
-    @media (min-width: 710px) {
+    @media (min-width: 1000px) {
         flex-wrap: nowrap;
         justify-content: flex-end;
         padding: 0em;
     }
     &__picture-wrapper {
         width: 100%;
-        // width: 462px;
         min-height: 462px;
         background-image: radial-gradient(
             circle at 50% 39%,
             #072142,
             #00132c 101%
         );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
 
-        @media (min-width: 710px) {
-            margin-right: 5%;
-            flex-basis: 40%;
-        }
+        // @media (min-width: 710px) {
+        //     margin-right: 5%;
+        //     flex-basis: 40%;
+        // }
         @media (min-width: 1000px) {
-            margin-right: 10%;
-            width: 40%;
+            margin-right: 5%;
+            min-width: 40%;
         }
     }
     &__wrapper {
         padding: 1.2em;
         align-self: center;
         @media (min-width: 710px) {
-            width: 50%;
+            width: 70%;
         }
         @media (min-width: 1000px) {
             width: 70%;
@@ -42,10 +47,34 @@
         padding-right: 7%;
         @extend %textprops;
         @media (min-width: 1000px) {
-            padding-right: 10%;
+            padding-right: 5%;
         }
     }
     &__heading {
         @extend %headingprops;
     }
+    &__img-item-1,
+    &__img-item-2,
+    &__img-item-3 {
+        position: absolute;
+    }
+    &__img-item-1 {
+        height: 50px;
+    }
+    &__img-item-2 {
+        height: 35px;
+        top: 15%;
+    }
+    &__img-item-3 {
+        height: 30px;
+        bottom: 25%;
+    }
 }
+// @keyframes spinning {
+//     from {
+//         transform: rotate(0deg);
+//     }
+//     to {
+//         transform: rotate(360deg);
+//     }
+// }
