@@ -22,23 +22,28 @@
 
         &__item {
             display: contents;
-            &--active {
-                border-bottom: 4px solid red;
-            }
         }
         &__link {
             padding: 0.2em;
+            margin-bottom: 1em;
             text-decoration: none;
             color: $textandbackground-color-one;
             font-weight: bold;
             letter-spacing: 0.59px;
+            transition: 300ms;
             @media (min-width: 500px) {
-                padding: 1em;
+                padding: 0.3em;
+                margin: 1em;
             }
         }
-        // &__link--active {
-        //     text-decoration: underline;
-        // }
+        &__link:hover {
+            @media (min-width: 770px) {
+                transform: scale(1.2);
+            }
+        }
+        &__link--active {
+            border-bottom: 4px solid $text-color-two;
+        }
     }
     @media (min-width: 500px) {
         justify-content: space-between;
@@ -53,6 +58,11 @@
             height: 100%;
             width: 90px;
             object-fit: contain;
+            transition: 1s;
         }
     }
+}
+
+.navbar-head__logo-wrapper__item:hover {
+    transform: rotate(360deg);
 }

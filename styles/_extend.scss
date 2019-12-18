@@ -28,3 +28,15 @@
 %boxshadow {
     box-shadow: 0 2px 5px 0 rgba(160, 160, 160, 0.5);
 }
+%firstheadings {
+    font-size: 2.5em;
+    font-weight: 800;
+    letter-spacing: 2.2px;
+    border-bottom: 5px solid $textandbackground-color-one;
+}
+%herotext {
+    color: #436dac;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}

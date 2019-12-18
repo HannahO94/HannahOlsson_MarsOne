@@ -31,10 +31,8 @@
         font-weight: 800;
         letter-spacing: 1.33px;
         font-size: 36px;
-        color: #2c4f80;
-        // @media (min-width: 1000px){
+        color: $color-heading-blue;
         grid-column: span 2;
-        // }
     }
 }
 
@@ -118,7 +116,6 @@
         }
     }
     &__heading {
-        line-height: unset;
         @extend %headingprops;
 
         @media (min-width: 1000px) {

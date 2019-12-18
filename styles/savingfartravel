@@ -68,34 +68,12 @@
         height: 50px;
     }
     &__img-item-2 {
-        height: 30px;
+        height: 35px;
         top: 15%;
+        animation: orbiting 3s linear infinite;
     }
     &__img-item-3 {
         height: 30px;
         bottom: 25%;
     }
 }
-.mars-orb {
-    border: solid 1px white;
-    border-radius: 50%;
-    height: 300px;
-    width: 300px;
-    position: absolute;
-}
-.mars {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin-top: -15px;
-}
-// @keyframes orbiting {
-//     100% {
-//         from {
-//             transform: rotate(0);
-//         }
-//         to {
-//             transform: rotate(360deg);
-//         }
-//     }
-// }
