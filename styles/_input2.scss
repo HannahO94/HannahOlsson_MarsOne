@@ -2,26 +2,13 @@
     background: $background-color-two;
     padding: 5% 10% 5% 10%;
 }
-//     display: grid;
-//     justify-content: center;
-//     grid-template-columns: 1fr;
-//     @media (min-width: 1000px) {
-//         grid-auto-columns: 1fr 1fr 1fr;
-//     }
 
-//     &__heading-wrapper {
-//         @media (min-width: 1000px) {
-//             grid-column: span 2;
-//         }
-//     }
-// }
 .input {
     display: grid;
     background: $textandbackground-color-one;
-    padding: 10%;
+    padding: 5% 10%;
     grid-gap: 1em;
     grid-column: span 2;
-    grid-auto-flow: row;
     @media (min-width: 600px) {
         grid-template-columns: 1fr 1fr;
     }
@@ -33,15 +20,27 @@
         width: 100%;
         height: 30px;
         border-radius: 5px;
-        border: solid 1px #2c4f80;
+        border: solid 1px $color-heading-blue;
+    }
+    &__submit {
+        grid-column: 1 / -1;
+        justify-self: center;
+        margin-top: 1em;
     }
     &__submit__button {
-        color: #2c4f80;
+        color: $color-heading-blue;
         width: 128px;
         height: 38px;
         border-radius: 10px;
-        border: solid 1px #2c4f80;
+        border: solid 1px $color-heading-blue;
         background: $textandbackground-color-one;
+        &:hover {
+            @media (min-width: 770px) {
+                color: $textandbackground-color-one;
+                background: rgba(83, 135, 212, 0.9);
+                font-weight: bold;
+            }
+        }
     }
     &__box__birthdate {
         width: 100%;
@@ -59,7 +58,7 @@
         &__message {
             width: 100%;
             height: 200px;
-            border: solid 1px #2c4f80;
+            border: solid 1px $color-heading-blue;
         }
     }
 }

@@ -29,7 +29,7 @@
             text-decoration: none;
             color: $textandbackground-color-one;
             font-weight: bold;
-            letter-spacing: 0.59px;
+            letter-spacing: 1px;
             transition: 300ms;
             @media (min-width: 500px) {
                 padding: 0.3em;
@@ -50,7 +50,6 @@
         flex-direction: row;
     }
     &__logo-wrapper {
-        box-sizing: border-box;
         margin: 1em 2em;
         height: 100%;
 
@@ -62,7 +61,6 @@
         }
     }
 }
-
 .navbar-head__logo-wrapper__item:hover {
     transform: rotate(360deg);
 }

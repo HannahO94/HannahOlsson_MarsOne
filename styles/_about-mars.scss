@@ -1,12 +1,11 @@
 .about-mars {
-    // max-width: 1200px;
     background-color: $background-color-two;
     display: grid;
     grid-gap: 2em;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: auto auto;
+    // grid-template-rows: auto auto;
     justify-items: center;
-    align-items: center;
+    // align-items: center;
     padding: 2.5em 2.5em 5em 2.5em;
     @media (min-width: 650px) {
         padding-left: 5%;
@@ -18,14 +17,14 @@
     }
     @media (min-width: 1300px) {
         grid-template-columns: 2fr 1fr;
-        grid-row: auto auto auto;
+        // grid-row: auto auto auto;
+        grid-gap: 3em;
     }
     @media (min-width: 1600px) {
         padding-left: 15%;
         padding-right: 15%;
     }
     &__article {
-        // width: 80%;
         background: $textandbackground-color-one;
         display: grid;
         grid-template-areas:
@@ -33,43 +32,39 @@
             "text"
             "text";
         grid-row: reperat(3, 200px);
-        grid-column: auto;
-        grid-auto-flow: row;
+        // grid-column: auto;
+        // grid-auto-flow: row;
         justify-items: center;
         padding: 1em;
         grid-gap: 1.5em;
         @extend %boxshadow;
-        &-two {
-            background: $textandbackground-color-one;
-            display: grid;
-            grid-template-areas:
-                "picture"
-                "text"
-                "text";
-            justify-items: center;
-            grid-gap: 1.5em;
-            @extend %boxshadow;
-            padding: 1em;
+        // &-two {
+        //     background: $textandbackground-color-one;
+        //     display: grid;
+        //     grid-template-areas:
+        //         "picture"
+        //         "text"
+        //         "text";
+        //     justify-items: center;
+        //     grid-gap: 1.5em;
+        //     @extend %boxshadow;
+        //     padding: 1em;
 
-            @media (min-width: 650px) {
-                grid-template-areas: "picture space text";
-                grid-column: 200px 50px 1fr;
-                padding: 0;
-            }
-        }
+        //     @media (min-width: 650px) {
+        //         grid-template-areas: "picture space text";
+        //         grid-column: 200px 50px 1fr;
+        //         padding: 0;
+        //     }
+        // }
         @media (min-width: 650px) {
-            // width: 100%;
             grid-template-areas: "picture space text";
             grid-column: 200px 50px 1fr;
-            grid-row: auto;
+            // grid-row: auto;
         }
     }
     &__heading {
-        width: 100%;
-        text-align: center;
-        font-weight: 800;
-        font-size: 30px;
-        color: #2c4f80;
+        @extend %headingmainsection;
+        color: $color-heading-blue;
         grid-column: span 2;
     }
     &__picture-wrapper {
@@ -97,8 +92,6 @@
             @media (min-width: 320px) {
                 width: 316px;
             }
-
-            // height: 300px;
         }
     }
     &__article-wrapper {
@@ -113,16 +106,7 @@
         }
     }
 }
-.read-more {
-    border-radius: 10px;
-    border: solid 1px $background-footer;
-    width: 130px;
-    height: 40px;
-    color: $background-footer;
-    background: $textandbackground-color-one;
-}
-
-.about-mars__article:nth-of-type(1) {
+.about-mars__article-one {
     grid-column: 1 / -1;
     @media (min-width: 1300px) {
         grid-column: 1 / 2;
@@ -130,30 +114,71 @@
 }
 .about-mars__article-two {
     grid-column: 1 / -1;
+    background: $textandbackground-color-one;
+    display: grid;
+    grid-template-areas:
+        "picture"
+        "text"
+        "text";
+    justify-items: center;
+    grid-gap: 1.5em;
+    @extend %boxshadow;
+    padding: 1em;
+    @media (min-width: 650px) {
+        grid-template-areas: "picture space text";
+        grid-column: 200px 50px 1fr;
+        padding: 0;
+    }
     @media (min-width: 1300px) {
         grid-row: 3;
         grid-column: 1 / 2;
     }
 }
-.about-mars__article:nth-of-type(3) {
+.two {
+    padding: 2em 1em 2em 0;
+    @media (min-width: 1500px) {
+        padding-bottom: 4em;
+    }
+}
+// .about-mars__article:nth-of-type(3) {
+//     grid-column: 1 / -1;
+//     @media (min-width: 1300px) {
+//         padding-top: 0;
+//         height: 100%;
+//         grid-row: span 2;
+//         grid-column: 2;
+//     }
+// }
+.three {
     grid-column: 1 / -1;
     @media (min-width: 1300px) {
         padding-top: 0;
-        // padding-bottom: 0;
         height: 100%;
         grid-row: span 2;
         grid-column: 2;
-    }
-}
-.three {
-    @media (min-width: 1300px) {
         grid-template-areas:
             "picture"
-            // "space"
             "text";
         padding-bottom: 0;
     }
+    &--picture {
+        width: 75%;
+        height: 75%;
+    }
 }
-.two {
-    padding: 2em 1em 6em 0;
+
+.read-more {
+    border-radius: 10px;
+    border: solid 1px $background-footer;
+    width: 130px;
+    height: 40px;
+    color: $background-footer;
+    background: $textandbackground-color-one;
+    &:hover {
+        @media (min-width: 770px) {
+            color: $textandbackground-color-one;
+            background: rgba(83, 135, 212, 0.9);
+            font-weight: bold;
+        }
+    }
 }

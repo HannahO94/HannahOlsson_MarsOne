@@ -9,7 +9,7 @@
 }
 %textprops {
     font-weight: 500;
-    line-height: 1.4;
+    line-height: 1.5;
     letter-spacing: 1px;
     color: $text-color-three;
 }
@@ -36,7 +36,14 @@
 }
 %herotext {
     color: #436dac;
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: bold;
     letter-spacing: 1.5px;
+}
+%headingmainsection {
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+    font-size: 36px;
 }

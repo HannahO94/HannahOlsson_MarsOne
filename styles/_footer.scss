@@ -2,19 +2,17 @@
     background: $background-footer;
     margin-bottom: 0;
     text-align: center;
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding-top: 7em;
+    padding-bottom: 7em;
     color: $textandbackground-color-one;
 
     &__heading {
         font-weight: bold;
         margin-top: 0;
         font-size: 30px;
-        letter-spacing: 1.11px;
         margin-bottom: 0;
     }
     &__text {
-        margin-bottom: 0;
         padding: 1em;
     }
     &__strong {

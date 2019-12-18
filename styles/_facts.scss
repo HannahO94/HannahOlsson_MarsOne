@@ -26,11 +26,7 @@
     }
 
     &__heading {
-        width: 100%;
-        text-align: center;
-        font-weight: 800;
-        letter-spacing: 1.33px;
-        font-size: 36px;
+        @extend %headingmainsection;
         color: $color-heading-blue;
         grid-column: span 2;
     }
@@ -89,6 +85,16 @@
     }
     &__list {
         @extend %textprops;
+        font-weight: bold;
+        margin-left: -1.3em;
+        line-height: 2;
+    }
+    &__list-item {
+        padding-left: 2em;
+    }
+    &__list-item::marker {
+        color: $text-color-two;
+        font-size: 12px;
     }
 }
 .facts-article__todo {
@@ -113,6 +119,9 @@
             padding: 4em;
             padding-right: 0;
             align-self: center;
+        }
+        @media (min-width: 1300px) {
+            max-width: 40%;
         }
     }
     &__heading {

@@ -23,11 +23,6 @@
         justify-content: center;
         flex-direction: column;
         position: relative;
-
-        // @media (min-width: 710px) {
-        //     margin-right: 5%;
-        //     flex-basis: 40%;
-        // }
         @media (min-width: 1000px) {
             margin-right: 5%;
             min-width: 40%;
@@ -59,16 +54,12 @@
     &__heading {
         @extend %headingprops;
     }
-    &__img-item-1,
-    &__img-item-2,
-    &__img-item-3 {
-        position: absolute;
-    }
     &__img-item-1 {
         height: 50px;
+        position: absolute;
     }
     &__img-item-2 {
-        height: 30px;
+        height: 35px;
         top: 15%;
     }
     &__img-item-3 {
@@ -76,12 +67,24 @@
         bottom: 25%;
     }
 }
+
+//ANIMATION
+
+@keyframes orbiting {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .mars-orb {
-    border: solid 1px white;
     border-radius: 50%;
     height: 300px;
     width: 300px;
     position: absolute;
+    animation: orbiting 20s linear infinite;
 }
 .mars {
     position: absolute;
@@ -89,13 +92,16 @@
     left: 50%;
     margin-top: -15px;
 }
-// @keyframes orbiting {
-//     100% {
-//         from {
-//             transform: rotate(0);
-//         }
-//         to {
-//             transform: rotate(360deg);
-//         }
-//     }
-// }
+.earth-orb {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    animation: orbiting 10s linear infinite;
+}
+.earth {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: -15px;
+}
