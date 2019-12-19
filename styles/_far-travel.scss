@@ -81,10 +81,14 @@
 
 .mars-orb {
     border-radius: 50%;
-    height: 300px;
-    width: 300px;
+    height: 280px;
+    width: 280px;
     position: absolute;
     animation: orbiting 20s linear infinite;
+    @media (min-width: 380px) {
+        height: 300px;
+        width: 300px;
+    }
 }
 .mars {
     position: absolute;
@@ -94,10 +98,14 @@
 }
 .earth-orb {
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    height: 180px;
+    width: 180px;
     position: absolute;
     animation: orbiting 10s linear infinite;
+    @media (min-width: 380px) {
+        height: 200px;
+        width: 200px;
+    }
 }
 .earth {
     position: absolute;

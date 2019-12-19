@@ -139,7 +139,7 @@ label {
   background: linear-gradient(182deg, #00132c 61%, rgba(21, 52, 98, 0.9));
   position: absolute;
   content: "";
-  width: 100vw;
+  max-width: 100vw;
   height: 100vh;
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
@@ -1030,11 +1030,18 @@ main {
 
 .mars-orb {
   border-radius: 50%;
-  height: 300px;
-  width: 300px;
+  height: 280px;
+  width: 280px;
   position: absolute;
   -webkit-animation: orbiting 20s linear infinite;
           animation: orbiting 20s linear infinite;
+}
+
+@media (min-width: 380px) {
+  .mars-orb {
+    height: 300px;
+    width: 300px;
+  }
 }
 
 .mars {
@@ -1046,11 +1053,18 @@ main {
 
 .earth-orb {
   border-radius: 50%;
-  height: 200px;
-  width: 200px;
+  height: 180px;
+  width: 180px;
   position: absolute;
   -webkit-animation: orbiting 10s linear infinite;
           animation: orbiting 10s linear infinite;
+}
+
+@media (min-width: 380px) {
+  .earth-orb {
+    height: 200px;
+    width: 200px;
+  }
 }
 
 .earth {
