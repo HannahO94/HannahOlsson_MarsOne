@@ -37,6 +37,7 @@
         @extend %textprops;
         &--bolder {
             color: $text-color-two;
+            font-weight: bold;
         }
         @media (min-width: 800px) {
             padding-left: 2.4em;
@@ -44,7 +45,6 @@
     }
 }
 .mars-one__picture-wrapper {
-    // box-sizing: border-box;
     width: 90%;
     align-self: stretch;
     &__item {

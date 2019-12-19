@@ -1,7 +1,6 @@
 .navbar-head {
     height: auto;
     background-color: #061b38;
-    // width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +36,7 @@
             }
         }
         &__link:hover {
-            @media (min-width: 770px) {
+            @media (min-width: 768px) {
                 transform: scale(1.2);
             }
         }
@@ -61,6 +60,8 @@
         }
     }
 }
-.navbar-head__logo-wrapper__item:hover {
-    transform: rotate(360deg);
+@media (min-width: 768px) {
+    .navbar-head__logo-wrapper__item:hover {
+        transform: rotate(360deg);
+    }
 }
